@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Datamato Smart Refrigerator System</title>
+    <link rel="shortcut icon" href="/assets/images/icon_fridge.ico" />
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=BenchNine" rel="stylesheet">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> {{!--
+    <script type="text/javascript">
+
+        function check() {
+            if (!frm1.username.value) {
+                alert("Please Enter Name");
+                return (false);
+            }
+            return (true);
+        }
+
+    </script> --}}
+
+
+    <script>
+        function mouseoverPass(obj) {
+            var obj = document.getElementById('password');
+            obj.type = "text";
+        }
+        function mouseoutPass(obj) {
+            var obj = document.getElementById('password');
+            obj.type = "password";
+        }
+    </script>
+
+
+</head>
+
+<body>
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+            <!-- Tabs Titles -->
+
+            <!-- Icon -->
+            <div class="fadeIn first">
+                <img src="/assets/images/icon.svg" id="icon" alt="User Icon" />
+            </div>
+
+            <!-- Login Form -->
+            <form name='frm1' action="/login" method="post">
+                <input type="text" id="login" class="fadeIn second" name="username" placeholder="username" required placeholder="Enter Name"
+                    oninvalid="this.setCustomValidity('Enter User Name Here')" oninput="this.setCustomValidity('')">
+                <input type="password" id="password" class="fadeIn third" name="password" placeholder="password" onmouseover="mouseoverPass()" onmouseout = "mouseoutPass()"
+                    required placeholder="Enter Password" oninvalid="this.setCustomValidity('Enter Password Here')" oninput="this.setCustomValidity('')">
+                <input type="submit" class="fadeIn fourth" value="Log In">
+
+            </form>
+            <!-- Remind Pasgitsowrd -->
+            <div id="formFooter">
+                <a class="underlineHover" href="/join/signUp">New user? Register here</a>
+            </div>
+
+        </div>
+        <div style="font-family: 'BenchNine', sans-serif; text-align: center; vertical-align: middle;
+         padding-top: 20px; color:#56baed ">@Copyright 2018 Datamato Technologies Pvt Ltd</div>
+    </div>
+</body>
+
+</html>
